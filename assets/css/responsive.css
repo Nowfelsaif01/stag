@@ -1,0 +1,278 @@
+/* ============================================================== 
+    # Helper CSS
+=================================================================== */
+
+@media (min-width: 821px){
+
+    .container-lg, 
+    .container-md, 
+    .container-sm, 
+    .container {
+        max-width: 984px;
+    }
+}
+@media (min-width: 576px){
+
+.container-sm, .container{
+    max-width:100%;
+}
+
+}
+
+/* ============================================================== 
+    # Responsive CSS
+=================================================================== */
+
+@media  (max-width: 820px) {
+
+    .custom-container {
+        max-width: 100%;
+        margin-left: 370px;
+    }
+
+/* About-Section */
+.about-content {
+    width:auto;
+    margin:18px;
+    padding: 0px;
+}
+.about-area .section-right-content{
+    width:100%;
+}
+.content-width{
+    flex-direction: column;
+}
+.content-width > *{
+    width: 100%;
+}
+.image-box{
+    min-width:100%;
+    height:378px;
+}
+.about-box, .location-box{
+    width: 48.6%;
+}
+.about-content > .row {
+    flex-direction: column-reverse; 
+    gap: 18px;
+}
+.image-box {
+    order: 1; /* Change the order to move image-box to the bottom */
+}
+
+.section-right-content {
+    order: 2; /* Change the order to move section-right-content to the top */
+}
+
+/* Project-Section */
+
+.project-content{
+    width:auto;
+    margin:18px;
+}
+.project-item{
+    width: 100%;
+}
+.project-box{
+    width: 48.6% ;
+    height: auto;
+    padding: 7px 7px 26px 7px;
+}
+.project-image-box{
+    max-width:100%;
+    height: 250px;
+}
+
+/* Partners section */
+
+.partners-content{
+    width:auto;
+    margin:18px;
+}
+.banner-item{
+    width: 100%;
+    font-size:7px;
+    padding: 0px 10px;
+}
+.facts{
+    flex-direction: column;
+}
+.facts-item1{
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.facts-item1 p{
+    margin-top: 15px;
+}
+.facts-item2, .facts-item3{
+    width: 50%;
+} 
+
+/* Education & Experience Section */
+
+.education-content {
+    width:auto;
+    margin:18px;
+}
+.education-box{
+    width: 100%;
+}
+.experience-box{
+    width: 100%;
+}
+
+/* Services Section */
+
+.services-content {
+    width:auto;
+    margin:18px;
+}
+.services-item-inner{
+    width: 100%;
+}
+
+/* Stack Section */
+
+.stack-content {
+    width:auto;
+    margin:18px;
+}
+.stack-item-inner{
+    width: 100%;
+}
+
+/* Blog Section */
+
+.blog-content {
+    width:auto;
+    margin:18px;
+}
+.blog-box1{
+    width: 100%;
+}
+.blog-box2, .blog-box3{
+    width: 48.6%;
+}
+.blog-image-box{
+    width: 100%;
+    min-height: 200px;
+}
+.blog-image-box img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Gallery Section */
+
+
+.gallery-content {
+    width:auto;
+    margin:18px;
+}
+
+/* Contact Section */
+
+.Contact-content {
+    width:auto;
+    margin:18px;
+}
+.contact-items .row{
+    flex-direction: column;
+    gap:18px;
+}
+.contact-items .col-md-8, .contact-items .custom-form{
+    width: 100%;
+}
+.contact-items .col-md-4{
+    width: 100%;
+}
+.address-items{
+    width: 100%;
+}
+.address-title{
+    width: 100%;
+}
+
+}
+
+
+@media  (max-width: 755px) {
+
+    /* About-section */
+
+    .section-about .about-box h6{
+        font-size: 10px;
+    }
+    .section-about .about-box h3{
+        font-size: 20px;
+    }
+    .section-about .about-box p{
+        font-size: 13px;
+    }
+    .user-signature{
+        width: 90px;
+        height:60px;
+        float: right;
+        margin-top:10px;
+    }
+    .about-box, .location-box{
+        width: 100%;
+    }
+    .globe-animation{
+        position: absolute;
+        top:75px;
+        left:100px;
+    }
+
+    /* Projects-Section */
+
+    .project-content .section-header .banner-item{
+        display: none;
+    }
+    .project-content .section-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .project-box{
+        width: 100% ;
+        height: auto;
+        padding: 7px 7px 26px 7px;
+    }
+
+    /* Partners-Section */
+
+    .partners-content .section-header .banner-item{
+        display: none;
+    }
+    .facts-item1{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 5px;
+    }
+    .facts-item1 p{
+        margin:0px;
+    }
+    .facts aside{
+        flex-direction: column;
+    }
+    .facts-item2, .facts-item3{
+        width: 100%;
+    }
+
+    /* Blog Section */
+
+    .blog-box2, .blog-box3{
+        width: 100%;
+    }
+
+    /* Gallery Section */
+
+    .gallery-content .section-header .banner-item{
+        display: none;
+    }
+}
