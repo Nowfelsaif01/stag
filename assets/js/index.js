@@ -7,7 +7,7 @@ function updateDateTime() {
     var formattedDateTime = currentDate.toLocaleString('en-US', { weekday: 'short', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true });
 
     // Update the content of the span element
-    document.getElementById('dateTimeContent').textContent = formattedDateTime;
+    document.getElementById('dateTime').textContent = formattedDateTime;
 }
 
 // Call the function initially to set the initial value

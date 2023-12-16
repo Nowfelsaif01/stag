@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- ========== End Stylesheet ========== -->
@@ -29,9 +29,7 @@
                         <div class="logo-box d-flex justify-content-center align-items-center">
                             <img src="assets/images/Group 2.png" alt="Logo">
                         </div>
-                        <div class="project-title">
-                            <h3>STAG</h3>
-                        </div>
+                            <p class="logo-title"><a href="#">STAG</a></p>
                     </div>
                     <div class="right">
                         <div class="menu-icon">
@@ -77,38 +75,42 @@
         <!-- sidebar ends -->
 
         <main class="custom-container">
+
+            <!-- Start About 
+            ============================================= -->
             <section class="about-area">
-                <div class="about-inner">
+                 <div class="about-inner">
                     <div class="about-content container">
                         <div class="row">
                             <div class="image-box col-md-4">
                                 <img src="assets/images/About Sect Img.png" alt="User-img">
                             </div>
-                            <div class="section-right-content col-md-8">
-                                <div class="section-header content-width">
-                                    <a class="btn theme-btn theme-btn3" href="#"><span class="indicator icon-right-gap"></span>Available For Freelance Work</a>
-                                    <span class="btn theme-btn2">
-                                        <i class="ph ph-clock icon-right-gap"></i>
-                                        <span id="dateTimeContent"></span>
-                                    </span>                                
-                                    <a class="btn theme-btn data-word" href="#">
+                            <div class="content-box col-md-8">
+                                <div class="section-header  justify-content-between">
+                                    <a class="theme-simple-btn" href="#"><span class="indicator"></span>Available for freelance work</a>
+                                    <div class="show-date">
+                                        <i class="ph ph-clock"></i>
+                                        <span id="dateTime"></span>
+                                    </div>  
+                                    <a class="theme-btn" href="#">Contact me<i class='ph ph-arrow-up-right arrow-icon'></i></a>                              
+                                    <!-- <a class="btn theme-btn data-word" href="#">
                                         <aside>
-                                            <p data-hover="Contacts">Contacts<i class='ph ph-arrow-up-right arrow-icon'></i></p>
-                                            <p data-hover="Contacts">Contacts<i class='ph ph-arrow-up-right arrow-icon'></i></p>
+                                            <p data-hover="Contacts">Contact me<i class='ph ph-arrow-up-right arrow-icon'></i></p>
+                                            <p data-hover="Contacts">Contact me<i class='ph ph-arrow-up-right arrow-icon'></i></p>
                                         </aside>
-                                    </a>                              
+                                    </a>  -->
                                 </div>
                                 <div class="section-about row">
-                                    <div class="about-box col-md-6">
-                                        <h6>Web Developer</h6>
-                                        <h3>David Henderson👋🏽</h3>
+                                    <div class="about-box col-md-8">
+                                        <h5>A WEB DEVELOPER</h5>
+                                        <h1>David Henderson 👋🏽</h1>
                                         <p>I am a San francisco-based product designer with a focus on web design, illustration, a visual development. I have a diverse range of experience and industries.</p>
                                         <img class="user-signature" src="assets/images/signature.png" alt="User-Signature">
                                     </div>
-                                    <div class="location-box col-md-6">
-                                        <div class="location-box-header">
-                                            <span class="location-1 theme-btn3">44 Baker Street, SA</span>
-                                            <span class="location-2 theme-btn2"><i class="ph-duotone ph-map-pin map-icon"></i> USA</span>
+                                    <div class="location-box col-md-4">
+                                        <div class="location-info">
+                                            <div class="address">44 Baker Street, SA</div>
+                                            <div class="location"><i class="ph-duotone ph-map-pin map-icon"></i> USA</div>
                                         </div>
                                         <div class="globe-animation"></div>
                                     </div>
@@ -116,29 +118,35 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
             </section>
+            <!-- End About -->
+
+            <!-- Start Project 
+            ============================================= -->
             <section class="project-area">
                 <div class="project-inner">
                     <div class="project-content">
-                        <div class="section-header">
-                            <a class="btn theme-btn data-word" href="#">
-                                <aside>
-                                    <p data-hover="Projects">Projects<i class='ph ph-arrow-up-right arrow-icon'></i></p>
-                                    <p data-hover="Projects">Projects<i class='ph ph-arrow-up-right arrow-icon'></i></p>
-                                </aside>
-                            </a>
-                            <div class="banner-item">
-                                <div class="banner-inner">
-                                    <span class="marquee">⌘ It is a long established fact that a reader will be distracted by the readable content of a page when looking at its in a readable ⌘ It is a long established fact that a reader will be distracted by the readable content of a page when looking at its in a readable ⌘ </span>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="section-header justify-content-between">
+                                        <a class="theme-btn" href="#">Projects<i class='ph ph-arrow-up-right arrow-icon'></i></a>
+                                        <div class="banner">
+                                            <div class="marquee">
+                                                <span>⌘ It is a long established fact that a reader will be distracted by the readable content of a page when looking at its in a readable</span>
+                                                <!-- <span>⌘ It is a long established fact that a reader will be distracted by the readable content of a page when looking at its in a readable</span> -->
+                                            </div>
+                                        </div>
+                                        <div class="slider-btn">
+                                            <button class="prev"><i class="ph ph-caret-left"></i></button>
+                                            <button class="next active"><i class="ph ph-caret-right"></i></button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="pagi-btn">
-                                <a class="btn theme-btn2 pagi-btn-left" href="#"><i class="ph ph-caret-left"></i></a>
-                                <a class="btn theme-btn2 pagi-btn-right" href="#"><i class="ph ph-caret-right"></i></a>
-                            </div>
                         </div>
-                        <div class="container projects">
+                        <div class="container">
                             <div class="row">
                                 <div class="col-md-12 project-item">
                                     <div class="project-box">
@@ -285,6 +293,10 @@
                     </div>
                 </div>
             </section>
+            <!-- End Project -->
+
+            <!-- Start Partners 
+            ============================================= -->
             <section class="partners-area">
                 <div class="partners-inner">
                     <div class="partners-content">
@@ -356,6 +368,10 @@
                     </div>
                 </div>
             </section>
+            <!-- End Partners -->
+
+            <!-- Start Education 
+            ============================================= -->
             <section class="education-area">
                 <div class="education-inner">
                     <div class="education-content">
@@ -450,6 +466,10 @@
                     </div>
                 </div>
             </section>
+            <!-- End Partners -->
+
+            <!-- Start Services 
+            ============================================= -->
             <section class="services-area">
                 <div class="services-inner">
                     <div class="services-content">
@@ -528,6 +548,10 @@
                     </div>
                 </div>
             </section>
+            <!-- End Services -->
+
+            <!-- Start Stack 
+            ============================================= -->
             <section class="stack-area">
                 <div class="stack-inner">
                     <div class="stack-content">
@@ -600,6 +624,10 @@
                     </div>
                 </div>
             </section>
+            <!-- End Stack -->
+
+            <!-- Start Blog 
+            ============================================= -->
             <section class="blog-area">
                 <div class="blog-inner">
                     <div class="blog-content">
@@ -662,17 +690,21 @@
                     </div>
                 </div>
             </section>
+            <!-- End Blog -->
+
+            <!-- Start Testimonial 
+            ============================================= -->
             <section class="testimonial-area">
                 <div class="testimonial-inner">
                     <div class="testimonial-content">
                         <div class="section-header testimonial-header">
                             <span class="theme-btn2 theme-btn3">Testimonial</span>
-                            <div class="pagi-btn">
-                                <button class="theme-btn pagi-btn-left carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                            <div class="slider-btn">
+                                <button class="theme-btn prev carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
                                     <span class="visually-hidden">Previous</span>
                                     <i class="ph ph-caret-left"></i>
                                 </button>
-                                <button class="theme-btn pagi-btn-right carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                                <button class="theme-btn next carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
                                     <span class="visually-hidden">Next</span>
                                     <i class="ph ph-caret-right"></i>
                                 </button>
@@ -773,6 +805,10 @@
                     </div>
                 </div>
             </section>
+            <!-- End Testimonial -->
+
+            <!-- Start Gallery 
+            ============================================= -->
             <section class="gallery-area">
                 <div class="gallery-inner">
                     <div class="gallery-content">
@@ -819,6 +855,10 @@
                     </div>
                 </div>
             </section>
+            <!-- End Gallery -->
+
+            <!-- Start Contact 
+            ============================================= -->
             <section class="contact-area">
                 <div class="contact-inner">
                     <div class="contact-content">
@@ -873,6 +913,10 @@
                     </div>
                 </div>
             </section>
+            <!-- End Contact -->
+
+            <!-- Start Footer 
+            ============================================= -->
         </main>
     </div>
     </div>

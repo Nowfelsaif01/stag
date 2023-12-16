@@ -107,6 +107,7 @@ mark, nav, section, time, audio, video {
 .row > *{
     padding: 0px;
 }
+
 /* ============================================================== 
     # Template Default Styles
 =================================================================== */
@@ -130,72 +131,40 @@ img {
     margin-left: 370px;
 }
 .section-header{
+    display: flex;
+    padding: 14px 12px;
+    margin-bottom: 18px;
     background: var(--innerBox-background);
     border: 0.75px solid rgba(252, 252, 252, 0.05);
     backdrop-filter: blur(15.001426696777344px);
-    display: flex;
-    gap:15px;
-    padding: 14px 12px;
+}
+.theme-simple-btn,.theme-btn{
+    font-size: 13px;
+    height:39px;
+    color: #f9f9f9;
+    display: inline-flex;
+    align-items:center;
+    padding: 0px 24px;
+    gap: 8px;
+    border: 0.75px solid rgba(252, 252, 252, 0.10);
+    backdrop-filter: blur(26.25249671936035px);
+    background: 
+    linear-gradient(0deg, rgba(0, 170, 255, 0.05) 0%, rgba(182, 103, 195, 0.05) 100%),
+    radial-gradient(51.06% 51.06% at 50% 48.94%, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.00) 100%);
+    /* background: radial-gradient(51.06% 51.06% at 50% 48.94%, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.00) 100%);
+    border: 0.75px solid rgba(252, 252, 252, 0.05);
+    backdrop-filter: blur(15.001426696777344px); */
 }
 .theme-btn{
-    font-size: 13px;
-    height:39px;
-    background:var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
-    color: #f9f9f9;
-    padding: 0px 18px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    border-radius: 0px;
+    padding: 0px 20px 0px 18px;
+    gap: 0px;
 }
-.theme-btn2{
-    font-size: 13px;
-    height:39px;
-    width: fit-content;
-    background:var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
-    color: #f9f9f9;
-    padding: 0px 18px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    border-radius: 0px;
-}
-.theme-btn3{
-    background: radial-gradient(51.06% 51.06% at 50% 48.94%, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.00) 100%);
-}
-.btn-check:focus+.btn, .btn:focus, .btn:hover {
+/* .btn-check:focus+.btn, .btn:focus, .btn:hover {
     outline: none;
     box-shadow: none;
     color:#f9f9f9;
     border: 0.75px solid rgba(252, 252, 252, 0.05);
-}
-.icon-right-gap{
-    margin-right: 8px;
-    color:#00aaff;
-}
-.arrow-icon{
-    margin-left: 5px;
-    color:#f9f9f9;
-    font-size: 13px;
-}
-.banner-item{
-    width: 100%;
-    font-size: 12px;
-    padding: 0px 18px;
-    font-weight: 500;
-    background:var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
-    color:rgb(249, 249, 249, 0.70);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-}
+} */
 .data-word{
     overflow: hidden;
 }
@@ -223,6 +192,11 @@ img {
 .data-word:hover aside p, .data-word:hover aside i{
     color: #00aaff;
 }
+.about-area,.project-area,.partners-area,.education-area,.services-area,.stack-area,
+.blog-area,.testimonial-area,.gallery-area,.contact-area{
+    border: 0.75px solid rgba(252, 252, 252, 0.05);
+    margin-bottom: 38px;
+}
 
 /* ============================================================== 
     # Template Animation
@@ -231,8 +205,10 @@ img {
 /* text-slider */
 .marquee{
     display: inline-block;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+    overflow: hidden;
     white-space: nowrap; 
-    animation: textLoop 5s linear infinite; 
+    /* animation: textLoop 5s linear infinite;  */
 }
 @keyframes textLoop {
     from {
@@ -244,14 +220,7 @@ img {
 }
 
 /* blinking-indicator */
-.indicator {
-    height: 6px;
-    width: 6px;
-    background-color: #00a34c;
-    border-radius: 100%;
-    display: inline-block;
-    animation: glowing 1300ms infinite;
-}
+
 @keyframes glowing {
     0% {
         background-color: #2ba805;
@@ -335,17 +304,18 @@ img {
     border: 0.75px solid rgba(252, 252, 252, 0.05);
     backdrop-filter: blur(15.001426696777344px);
 }
-.project-title{
-    color: #C0C0C0;
+.logo-title a{
+    color: #c0c0c0;
     font-family:var(--font_outfit);
-    font-size: 18.002px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 1.5px;
 }
 .left{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap:11px;
 }
 .menu-icon{
@@ -363,7 +333,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 11px;
+    margin-right: 11px;
 }
 .user-img{
     border: 1.5px solid rgba(252, 252, 252, 0.05);
@@ -480,10 +450,6 @@ img {
     #About Section
 =================================================================== */
 
-.about-area{
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    margin-bottom: 38px;
-}
 .about-inner{
     border: 7.501px solid rgba(0, 163, 255, 0.01);
     background:var(--box_background);
@@ -497,26 +463,48 @@ img {
 .about-content .row {
     gap: 18px;
 }
-.image-box{
+.about-content .image-box{
     max-width: 298px;
     max-height: 378px;
 }
-.image-box img{
+.about-content .image-box img{
     height: 100%;
     width: 100%;
 }
-.content-width{
-    justify-content: space-evenly;
-}
-.about-area .section-right-content{
+.about-content .content-box {
     width: 667px;
 }
-.section-about{
-    margin-top: 16px;
-    display: flex;
-    gap: 18px;
+.theme-simple-btn .indicator {
+    height: 6px;
+    width: 6px;
+    background-color: #00a34c;
+    border-radius: 100%;
+    display: inline-block;
+    animation: glowing 1300ms infinite;
 }
-.about-box{
+.content-box .section-header .show-date{
+    font-size: 13px;
+    height:39px;
+    color: #f9f9f9;
+    padding: 0px 24px;
+    display: inline-flex;
+    align-items:center;
+    gap: 8px;
+    border: 0.75px solid rgba(252, 252, 252, 0.05);
+    background: linear-gradient(270deg, rgba(0, 170, 255, 0.04) 0%, rgba(0, 170, 255, 0.02) 100%);
+    backdrop-filter: blur(15.001426696777344px);
+}
+.content-box .section-header .show-date i{
+    color: #00aaff;
+}
+.section-header .theme-btn .arrow-icon{
+    margin-left: 2px;
+    height: 11px;
+}
+.about-content .content-box .section-header{
+    margin-bottom: 16px;
+}
+.section-about .about-box{
     width: 357px;
     height: 294px;
     background: var(--innerBox-background);
@@ -524,70 +512,79 @@ img {
     backdrop-filter: blur(15.001426696777344px);
     padding: 30px 27px;
 }
-.user-signature{
+.section-about .about-box .user-signature{
     width: 90px;
     height:60px;
     float: right;
-    margin-top: 27px;
+    margin-top: 15px;
+    display: block;
 }
-.about-box h6{
-    color: rgb(189, 189, 189, 0.70);
+.section-about .about-box h5{
+    font-family: var(--font_dm);
+    color: rgba(188, 188, 188, 0.70);
     font-size: 10px;
     font-weight: 500;
     letter-spacing: 0.375px;
+    /* line-height: 30.003px;  */
 }
-.about-box h3{
+.section-about .about-box h1{
+    font-family: var(--font_dm);
     color: #f9f9f9;
     font-size: 30px;
     font-weight: 500;
-    margin-top: 16px;
-    margin-bottom: 25px;
+    margin-top: 8px;
+    margin-bottom: 10px;
     letter-spacing: -0.75px;
 }
-.about-box p{
+.section-about .about-box p{
+    font-family: var(--font_dm);
     color: #8E8E8E;
+    font-style: normal;
+    line-height: 23.502px;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 0.225px;
 }
-.location-box{
-    display: flex;
-    justify-content: center;
+.section-about .location-box{
     position: relative;
     width: 291px;
     height: 294px;
     background: var(--innerBox-background);
     border: 0.75px solid rgba(252, 252, 252, 0.05);
     backdrop-filter: blur(15.001426696777344px);
-    padding: 18px 18px 237px 18px;
     overflow: hidden;
 }
-.location-box-header{
+.location-box .location-info{
     display: flex;
     gap: 15px;
+    align-items: center;
+    padding: 18px 18px 0;
 }
-.location-1{
-    height:39px;
-    font-size: 12px;
-    padding: 0px 18px;
-    width: fit-content;
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
+.location-box .location-info .address{
+    font-size: 13px;
     color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    border-radius: 0px;
+    min-height:39px;
+    padding: 10px 20px;
+    border: 0.75px solid rgba(252, 252, 252, 0.10);
+    backdrop-filter: blur(26.25249671936035px);
+    background: 
+    linear-gradient(0deg, rgba(0, 170, 255, 0.05) 0%, rgba(182, 103, 195, 0.05) 100%),
+    radial-gradient(51.06% 51.06% at 50% 48.94%, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.00) 100%);
+}
+.location-box .location-info .location{
+    font-size: 13px;
+    color: #f9f9f9;
+    height:39px;
+    padding: 10px 17px;
+    border: 0.75px solid rgba(252, 252, 252, 0.10);
+    background: linear-gradient(270deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0.00) 100%);
+    backdrop-filter: blur(15.001426696777344px);
 }
 
 /* ============================================================== 
     #Project Section
 =================================================================== */
 
-.project-area{
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    margin-bottom: 38px;
-}
 .project-inner{
     border: 7.501px solid rgba(0, 163, 255, 0.01);
     background:var(--box_background);
@@ -597,18 +594,42 @@ img {
     width: 984px;
     margin:18px;
 }
-.pagi-btn{
+.section-header .banner{
+    padding: 5px 10px;
+    height: 39px;
+    background:var(--innerBox-background);
+    border: 0.75px solid rgba(252, 252, 252, 0.05);
+    backdrop-filter: blur(15.001426696777344px);
+    overflow: hidden;
+}
+.section-header .banner span{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    color: rgba(249, 249, 249, 0.70);
+    /* animation: textLoop 5s linear infinite;  */
+}
+.section-header .slider-btn{
     display:flex;
     gap:10px;
 }
-.pagi-btn-left, .pagi-btn-right{
+.section-header .slider-btn button{
+    font-size: 15px;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0.2);
+    border: 0.75px solid rgba(252, 252, 252, 0.10); 
+    background: linear-gradient(270deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0.00) 100%);
+    backdrop-filter: blur(15px);
+}
+.section-header .slider-btn .prev, 
+.section-header .slider-btn .next{
     height: 39px;
     width: 39px;
-    padding: 0px;
-    font-size: 13px;
+}
+.section-header .slider-btn button.active{
+    color:rgba(255, 255, 255, 0.6);
 }
 .project-item{
-    margin-top: 18px;
     display: flex;
     gap: 18px;
     flex-wrap:wrap;
@@ -677,10 +698,6 @@ img {
     #Partners Section
 =================================================================== */
 
-.partners-area{
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    margin-bottom: 38px;
-}
 .partners-inner{
     border: 7.501px solid rgba(0, 163, 255, 0.01);
     background:var(--box_background);
@@ -757,7 +774,7 @@ img {
     font-weight: 500;
     letter-spacing: -0.75px;
 }
-.facts-item p, span{
+.facts-item p{
     color: #8E8E8E;
     font-size: 13px;
     font-weight: 400;
@@ -768,10 +785,6 @@ img {
     #Education & Experience Section
 =================================================================== */
 
-.education-area{
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    margin-bottom: 38px;
-}
 .education-inner{
     border: 7.501px solid rgba(0, 163, 255, 0.01);
     background:var(--box_background);
@@ -852,10 +865,6 @@ img {
     #Services Section
 =================================================================== */
 
-.services-area{
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    margin-bottom: 38px;
-}
 .services-inner{
     border: 7.501px solid rgba(0, 163, 255, 0.01);
     background:var(--box_background);
@@ -914,14 +923,11 @@ img {
     color: #00aaff;
     font-size: 17px;
 }
+
 /* ============================================================== 
     #Stack Section
 =================================================================== */
 
-.stack-area{
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    margin-bottom: 38px;
-}
 .stack-inner{
     border: 7.501px solid rgba(0, 163, 255, 0.01);
     background:var(--box_background);
@@ -972,10 +978,6 @@ img {
     #Blog Section
 =================================================================== */
 
-.blog-area{
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    margin-bottom: 38px;
-}
 .blog-inner{
     border: 7.501px solid rgba(0, 163, 255, 0.01);
     background:var(--box_background);
@@ -1032,11 +1034,6 @@ img {
     #Testimonial Section
 =================================================================== */
 
-
-.testimonial-area{
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    margin-bottom: 38px;
-}
 .testimonial-inner{
     border: 7.501px solid rgba(0, 163, 255, 0.01);
     background:var(--box_background);
@@ -1046,16 +1043,16 @@ img {
     width: 984px;
     margin:18px;
 }
-.pagi-btn{
+/* .slider-btn{
     display:flex;
     gap:10px;
-}
-.pagi-btn-left, .pagi-btn-right{
+} */
+/* .prev, .next{
     height: 39px;
     width: 39px;
     padding: 0px;
     font-size: 13px;
-}
+} */
 .carousel-control-prev, .carousel-control-next {
     position: static;
 }
@@ -1136,10 +1133,6 @@ img {
     #Gallery Section
 =================================================================== */
 
-.gallery-area{
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    margin-bottom: 38px;
-}
 .gallery-inner{
     border: 7.501px solid rgba(0, 163, 255, 0.01);
     background:var(--box_background);
@@ -1171,14 +1164,11 @@ img {
     background: none;
     border:none;
 }
+
 /* ============================================================== 
     #Contact Section
 =================================================================== */
 
-.contact-area{
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    margin-bottom: 38px;
-}
 .contact-inner{
     border: 7.501px solid rgba(0, 163, 255, 0.01);
     background:var(--box_background);
@@ -1217,7 +1207,7 @@ textarea{
     font-weight: 400;
     padding:13px 0px 0px 13px;
 }
-button{
+/* button{
     height: 45px;
     background: var(--innerBox-background);
     border: 0.75px solid rgba(252, 252, 252, 0.05);
@@ -1225,7 +1215,7 @@ button{
     font-size: 13px;
     font-weight: 500;
     padding:0px;
-}
+} */
 .address-items{
     background: var(--innerBox-background);
     border: 0.75px solid rgba(252, 252, 252, 0.05);
