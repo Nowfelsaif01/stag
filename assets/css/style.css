@@ -125,6 +125,7 @@ img {
 }
 .wrapper{
     padding: 18px;
+    padding-bottom: 0px;
 }
 .custom-container {
     width: 1035px;
@@ -868,7 +869,7 @@ img {
 .edu-exp-items .edu-exp-item:hover .square{
     background-color: #00aaff;
 }
-.edu-exp-items .edu-exp-item:hover .edu-exp-info h4{
+.edu-exp-items .edu-exp-item:hover .edu-exp-info h5{
     color: #00aaff;
 }
 
@@ -985,11 +986,6 @@ img {
     width: 984px;
     margin:18px;
 }
-.blog-item{
-    display: flex;
-    flex-wrap:wrap;
-    gap: 18px;
-}
 
 /* ============================================================== 
     #Testimonial Section
@@ -1073,8 +1069,8 @@ img {
     letter-spacing: 0.225px;
 }
 .auth-logo-box{
-    width: 52px;
-    padding: 12px;
+    min-width: 52px;
+    line-height: 50px;
     text-align: center;
     border: 0.75px solid rgba(252, 252, 252, 0.05);
     background: linear-gradient(270deg, rgba(0, 170, 255, 0.04) 0%, rgba(0, 170, 255, 0.02) 100%);
@@ -1107,19 +1103,20 @@ img {
     max-width: 984px;
     margin:18px;
 }
-.gallery-item{
-    margin-top: 18px;
-    display: flex;
+.gallery-items{
+    flex-wrap: nowrap;
     gap: 18px;
-    /* flex-wrap: wrap; */
     overflow: hidden;
 }
-.gallery-item-inner{
-    min-width: 232px;
-    min-height:270px;
+.gallery-item{
+    max-width: 232px;
+    padding: 8px;
     background: var(--innerBox-background);
     border: 0.75px solid rgba(252, 252, 252, 0.05);
-    padding: 7px;
+    backdrop-filter: blur(15px);
+}
+.gallery-item img{
+    height:270px;
 }
 .break2{
     min-width:0px;
@@ -1144,56 +1141,62 @@ img {
     margin:18px;
 }
 .contact-items{
-    margin-top: 18px;
+    justify-content: space-between;
+    /* gap: 18px; */
 }
-.custom-form{
+.contact-form-box{
     width: 630px;
+}
+.form-box{
     padding: 25px;
     background: var(--innerBox-background);
     border: 0.75px solid rgba(252, 252, 252, 0.05);
-    display:flex;
-    flex-direction: column;
-    gap: 25px;
 }
-input{
+.form-box input,
+.form-box textarea{
+    width: 100%;
     height: 45px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    color: rgba(249, 249, 249, 0.50);
     font-size: 13px;
-    font-weight: 400;
-    padding-left: 13px;
-}
-textarea{
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
     color: rgba(249, 249, 249, 0.50);
-    font-size: 13px;
-    font-weight: 400;
-    padding:13px 0px 0px 13px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: linear-gradient(to right, rgba(0, 170, 255, 0.01), rgba(0, 170, 255, 0.05));
+    border: 0.75px solid rgba(252, 252, 252, 0.05);
+    /* backdrop-filter: blur(15px); */
 }
-/* button{
+.form-box textarea{
+    min-height: 120px;
+}
+.form-box button{
+    width: 100%;
     height: 45px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
     color:#f9f9f9;
     font-size: 13px;
     font-weight: 500;
     padding:0px;
-} */
-.address-items{
+    background: linear-gradient(to right, rgba(0, 170, 255, 0.01), rgba(0, 170, 255, 0.05)) transparent;
+    border: 0.75px solid rgba(252, 252, 252, 0.05);
+    /* background: 
+    linear-gradient(0deg, rgba(0, 170, 255, 0.05) 0%, rgba(182, 103, 195, 0.05) 100%),
+    radial-gradient(51.06% 51.06% at 50% 48.94%, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.00) 100%); */
+    /* backdrop-filter: blur(26.25249671936035px); */
+}
+.form-box button:hover{
+    border-color:#00aaff ;
+    color: #00aaff;
+}
+.contact-detail-box{
     background: var(--innerBox-background);
     border: 0.75px solid rgba(252, 252, 252, 0.05);
-    padding: 14px 21px 18px 7px;
+    padding: 14px;
 }
-.address-item{
-    width: 100%;
-    position: relative;
+.contact-info-box{
     display: flex;
     gap: 18px;
     margin-top: 18px;
+    position: relative;
 }
-.address-dotted-line{
+.dotted-line{
     position: absolute;
     top:53px;
     left:25px;
@@ -1202,37 +1205,81 @@ textarea{
     border-left: 1px dashed rgb(0, 170, 255, 0.20);
     border-bottom: 1px dashed rgb(0, 170, 255, 0.20);
 }
-.address-item-icon{
+.contact-icon-box{
     height: 52px;
-    width: 52px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    color: #00aaff;
+    min-width: 52px;
     font-size: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.address-item-inner{
+    color: #00aaff;
+    text-align: center;
+    line-height: 58px;
     background: var(--innerBox-background);
     border: 0.75px solid rgba(252, 252, 252, 0.05);
-    width: 238px;
-    height: 123px;
-    padding: 26px 0px 37px 26px;
 }
-.address-item-inner h5{
-    color: #F9F9F9;
+.contact-info{
+    width: 100%;
+    padding: 26px 0px 37px 26px;
+    background: var(--innerBox-background);
+    border: 0.75px solid rgba(252, 252, 252, 0.05);
+}
+.contact-info h2{
     font-size: 18px;
     font-weight: 500;
+    color: #F9F9F9;
     letter-spacing: -0.75px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
-.address-item-inner p{
-    color: #8E8E8E;
+.contact-info p{
     font-size: 12px;
-    font-weight: 400;
+    color: #8E8E8E;
     letter-spacing: 0.225px;
 }
-.address-item-inner p a{
+.contact-info p a{
     color: #8E8E8E;
+}
+
+/* ============================================================== 
+    #Footer Section
+=================================================================== */
+
+.footer-area{
+    border-top: 1px solid rgba(252, 252, 252, 0.10);
+    margin-bottom:38px ;
+}
+.footer-content{
+    display: flex;
+    padding: 25px 25px 0px 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content .footer-info{
+    display: flex;
+    gap: 25px;
+}
+.footer-content .footer-info p{
+    font-size: 12px;
+    position: relative;
+    color: rgba(249, 249, 249, 0.50);
+}
+.footer-content .footer-info p a{
+    color: #F9F9F9;
+}
+.spons-text::before,
+.link-text::before{
+    content: '';
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-10px,-45%);
+    border: 1px solid rgba(0, 170, 255, 0.60);
+    border-radius: 100%;
+}
+.footer-content .aside{
+    font-size: 12px;
+    color: rgba(249, 249, 249, 0.50);
+}
+.footer-content .aside i{
+    font-size: 15px;
+    color: rgba(0, 170, 255, 0.60);
+    margin-left: 1px;
 }

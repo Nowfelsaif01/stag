@@ -1,5 +1,5 @@
 let galleryLoops = gsap.utils.toArray('.gallery-slider').map((line, i) => {
-    const galleryItems = line.querySelectorAll(".gallery-slider .gallery-item-inner"),
+    const galleryItems = line.querySelectorAll(".gallery-slider .gallery-item"),
         galleryTl = horizontalLoop(galleryItems, {
             repeat: -1,
             speed: 1 + i * 0.5,
