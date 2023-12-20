@@ -11,63 +11,72 @@
 
     <!-- ========== Start Stylesheet ========== -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- ========== DM Sans Fonts ========== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- ========== Outfit Fonts ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
     <!-- ========== End Stylesheet ========== -->
 
 </head>
 <body>
-    <div class="wrapper d-flex">
+    <div class="wrapper">
         <!-- sidebar starts -->
         <div class="sidebar-area">
             <div class="sidebar-inner">
                 <div class="sidebar-header">
-                    <div class="left">
-                        <div class="logo-box d-flex justify-content-center align-items-center">
-                            <img src="assets/images/Group 2.png" alt="Logo">
-                        </div>
-                            <p class="logo-title"><a href="#">STAG</a></p>
+                    <div class="logo-box">
+                        <a class="logo-icon"><img src="assets/images/logo-icon.svg" alt="logo-icon"></a>
+                        <a class="logo" href="#"><img src="assets/images/logo.svg" alt="logo"></a>
                     </div>
-                    <div class="right">
-                        <div class="menu-icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
+                    <span class="time"></span>
                 </div>
-                <div class="sidebar-about d-flex align-items-end">
-                    <div class="user-img">
-                        <img src="assets/images/Mask group.png" alt="UserPhoto">
+                <div class="about-me-box">
+                    <div class="img-box">
+                        <img src="assets/images/about-me.png" alt="user-img">
                     </div>
-                    <div class="user-about">
+                    <div class="about-info">
                         <h2>David Henderson</h2>
-                        <h4>Back End Developer</h4>
-                        <span class="d-flex align-items-center"><i class="ph-duotone ph-map-pin map-icon"></i><p>San Francisco</p></span>
+                        <p>Back End Developer</p>
+                        <h5><i class="ph-duotone ph-map-pin map-icon"></i>San Francisco</h5>
                     </div>
                 </div>
-                <div class="sidebar-menus">
-                    <ul class="list-group">
-                        <li class="list-group-item active"><a href="#"><i class="ph-duotone ph-house"></i>Home</a></li>
-                        <li class="list-group-item"><a href="#"><i class="ph-duotone ph-squares-four"></i>Projects</a></li>
-                        <li class="list-group-item"><a href="#"><i class="ph-duotone ph-fingerprint"></i>About</a></li>
-                        <li class="list-group-item"><a href="#"><i class="ph-duotone ph-camera"></i>Gallery</a></li>
-                        <li class="list-group-item"><a href="#"><i class="ph-duotone ph-paperclip"></i>Contact</a></li>
-                        <li class="list-group-item"><a href="#"><i class="ph-duotone ph-swatches"></i>Blog</a></li>
-                    </ul>
+                <div class="menu">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#"><i class="ph-duotone ph-house"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="ph-duotone ph-squares-four"></i>Projects</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="ph-duotone ph-fingerprint"></i>About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="ph-duotone ph-camera"></i>Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="ph-duotone ph-paperclip"></i>Contact</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="ph-duotone ph-swatches"></i>Blog</a>
+                        </li>
+                      </ul>
                 </div>
                 <div class="sidebar-footer">
                     <div class="social-icons">
-                        <i class="ph-light ph-dribbble-logo"></i>
-                        <i class="ph-light ph-twitter-logo"></i>
-                        <i class="ph-light ph-instagram-logo"></i>
-                        <i class="ph-light ph-youtube-logo"></i>
+                        <a href=""><i class="ph-light ph-dribbble-logo"></i></a>
+                        <a href=""><i class="ph-light ph-twitter-logo"></i></a>
+                        <a href=""><i class="ph-light ph-instagram-logo"></i></a>
+                        <a href=""><i class="ph-light ph-youtube-logo"></i></a>
                     </div>
                     <div class="copyright">
-                        <span>&#169; 2023</span>
+                        <p>&#169; 2023</p>
                     </div>
                 </div>
             </div>
@@ -287,40 +296,40 @@
                                 <div class="col-12 client-area">
                                     <div class="clients d-flex">
                                         <div class="client-logo">
-                                            <img src="./assets/images/youtube.png" alt="Client" />
+                                            <img src="./assets/images/youtube.png" alt="client" />
                                         </div>
                                         <div class="client-logo">
-                                            <img src="./assets/images/webflow.png" alt="Client" />
+                                            <img src="./assets/images/webflow.png" alt="client" />
                                         </div>
                                         <div class="client-logo">
-                                            <img src="./assets/images/upwork.png" alt="Client" />
+                                            <img src="./assets/images/upwork.png" alt="client" />
                                         </div>
                                         <div class="client-logo">
-                                            <img src="./assets/images/shopify.png" alt="Client" />
+                                            <img src="./assets/images/shopify.png" alt="client" />
                                         </div>
                                         <div class="client-logo">
-                                            <img src="./assets/images/netflix.png" alt="Client" />
+                                            <img src="./assets/images/netflix.png" alt="client" />
                                         </div>
                                         <div class="client-logo">
-                                            <img src="./assets/images/zoom.png" alt="Client" />
+                                            <img src="./assets/images/zoom.png" alt="client" />
                                         </div>
                                         <!-- <div class="client-logo">
-                                            <img src="./assets/images/youtube.png" alt="Client" />
+                                            <img src="./assets/images/youtube.png" alt="client" />
                                         </div>
                                         <div class="client-logo">
-                                            <img src="./assets/images/webflow.png" alt="Client" />
+                                            <img src="./assets/images/webflow.png" alt="client" />
                                         </div>
                                         <div class="client-logo">
-                                            <img src="./assets/images/upwork.png" alt="Client" />
+                                            <img src="./assets/images/upwork.png" alt="client" />
                                         </div>
                                         <div class="client-logo">
-                                            <img src="./assets/images/shopify.png" alt="Client" />
+                                            <img src="./assets/images/shopify.png" alt="client" />
                                         </div>
                                         <div class="client-logo">
-                                            <img src="./assets/images/netflix.png" alt="Client" />
+                                            <img src="./assets/images/netflix.png" alt="client" />
                                         </div>
                                         <div class="client-logo">
-                                            <img src="./assets/images/zoom.png" alt="Client" />
+                                            <img src="./assets/images/zoom.png" alt="client" />
                                         </div> 
                                         <div class="client-logo break"></div> -->
                                     </div>
@@ -675,7 +684,7 @@
                                     <div class="auth-img-box">
                                         <img src="assets/images/testimonial1.png" alt="author-img">
                                     </div>
-                                    <span class="dotted-line"></span>
+                                    <span class="testimonial-dotted-line"></span>
                                     <div class="testimonial-item-content">
                                         <div class="author-about">
                                             <div class="author-info">
@@ -695,7 +704,7 @@
                                     <div class="auth-img-box">
                                         <img src="assets/images/testimonial2.png" alt="author-img">
                                     </div>
-                                    <span class="dotted-line"></span>
+                                    <span class="testimonial-dotted-line"></span>
                                     <div class="testimonial-item-content">
                                         <div class="author-about">
                                             <div class="author-info">
@@ -866,14 +875,14 @@
                                 <p class="spons-text">Template by Themespace</p>
                                 <p class="link-text"><a href="#">Buy Template</a></p>
                             </div>
-                            <span class="aside">
+                            <a class="aside" href="">
                                 Scroll to top<i class="ph-bold ph-arrow-up"></i>
-                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </footer>
-            <!-- End CoFooterntact -->
+            <!-- End Footer -->
         </main>
     </div>
     </div>
