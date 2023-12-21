@@ -16,7 +16,7 @@
     <!-- ========== DM Sans Fonts ========== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
     <!-- ========== Outfit Fonts ========== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
             <div class="sidebar-inner">
                 <div class="sidebar-header">
                     <div class="logo-box">
-                        <a class="logo-icon"><img src="assets/images/logo-icon.svg" alt="logo-icon"></a>
+                        <a class="logo-img-box" href="#"><img src="assets/images/logo-icon.svg" alt="logo-icon"></a>
                         <a class="logo" href="#"><img src="assets/images/logo.svg" alt="logo"></a>
                     </div>
                     <span class="time"></span>
@@ -43,7 +43,7 @@
                     <div class="about-info">
                         <h2>David Henderson</h2>
                         <p>Back End Developer</p>
-                        <h5><i class="ph-duotone ph-map-pin map-icon"></i>San Francisco</h5>
+                        <h5><i class="ph-duotone ph-map-pin map-icon"></i>San francisco</h5>
                     </div>
                 </div>
                 <div class="menu">
@@ -76,7 +76,7 @@
                         <a href=""><i class="ph-light ph-youtube-logo"></i></a>
                     </div>
                     <div class="copyright">
-                        <p>&#169; 2023</p>
+                        <p>&copy; 2023</p>
                     </div>
                 </div>
             </div>
@@ -834,26 +834,28 @@
                                 </div>
                                 <div class="col-md-4 contact-detail-box">
                                     <div class="nolink-btn">Address</div>
-                                    <div class="contact-info-box">
-                                        <div class="contact-icon-box">
-                                            <i class="ph ph-map-trifold"></i>
+                                    <div class="bg-box">
+                                        <div class="contact-info-box">
+                                            <div class="contact-icon-box">
+                                                <i class="ph ph-map-trifold"></i>
+                                            </div>
+                                            <span class="dotted-line"></span>
+                                            <div class="contact-info">
+                                                <h2>Visit Me</h2>
+                                                <p>16/9, Down Street, Edinburgh<br>United Kingdom</p>
+                                            </div>
                                         </div>
-                                        <span class="dotted-line"></span>
-                                        <div class="contact-info">
-                                            <h2>Visit Me</h2>
-                                            <p>16/9, Down Street, Edinburgh<br>United Kingdom</p>
-                                        </div>
-                                    </div>
-                                    <div class="contact-info-box">
-                                        <div class="contact-icon-box">
-                                            <i class="ph ph-headphones"></i>
-                                        </div>
-                                        <span class="dotted-line"></span>
-                                        <div class="contact-info">
-                                            <h2>Contact Info</h2>
-                                            <p><a href="tel:+1284789900">+1 2847 89900,</a> 
-                                                <a href="tel:+1284789900">+1 2847 89900</a></p>
-                                            <p><a href="mailto:themespacestudio@mail.com">themespacestudio@mail.com</a></p>
+                                        <div class="contact-info-box">
+                                            <div class="contact-icon-box">
+                                                <i class="ph ph-headphones"></i>
+                                            </div>
+                                            <span class="dotted-line"></span>
+                                            <div class="contact-info">
+                                                <h2>Contact Info</h2>
+                                                <p><a href="tel:+1284789900">+1 2847 89900,</a> 
+                                                    <a href="tel:+1284789900">+1 2847 89900</a></p>
+                                                <p><a href="mailto:themespacestudio@mail.com">themespacestudio@mail.com</a></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div> 
@@ -872,10 +874,10 @@
                         <div class="col-md-12 footer-content">
                             <div class="footer-info">
                                 <p>© 2023 All rights reserved by WordPressRiver</p>
-                                <p class="spons-text">Template by Themespace</p>
+                                <p class="link-text">Template by <a href="#">Themespace</a></p>
                                 <p class="link-text"><a href="#">Buy Template</a></p>
                             </div>
-                            <a class="aside" href="">
+                            <a class="aside" href="#">
                                 Scroll to top<i class="ph-bold ph-arrow-up"></i>
                             </a>
                         </div>
@@ -885,8 +887,10 @@
             <!-- End Footer -->
         </main>
     </div>
-    </div>
-    
+
+     <!-- jQuery Frameworks
+    ============================================= -->
+
     <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
     <script src="assets/js/jquery-3.7.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
