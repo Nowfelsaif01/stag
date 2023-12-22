@@ -1,10 +1,10 @@
 
-let loops = gsap.utils.toArray('.clients-marquee').map((line, i) => {
-    const links = line.querySelectorAll(".clients-marquee .client-logo"),
+let loops = gsap.utils.toArray('.client-slider').map((line, i) => {
+    const links = line.querySelectorAll(".client-slider .client-logo"),
     tl = horizontalLoop(links, {
               repeat: -1, 
               speed: 1 + i * 0.5,
-        draggable: true,
+              draggable: true,
               reversed: false,
               paddingRight: parseFloat(gsap.getProperty(links[0], "marginRight", "px"))
           });

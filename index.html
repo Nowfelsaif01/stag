@@ -101,7 +101,9 @@
                                         <i class="ph ph-clock"></i>
                                         <span id="dateTime"></span>
                                     </div>  
-                                    <a class="theme-btn" href="#">Contact me<i class='ph ph-arrow-up-right arrow-icon'></i></a>                              
+                                    <a class="theme-btn" href="#">
+                                         Contact me<i class='ph ph-arrow-up-right arrow-icon'></i>
+                                    </a>                              
                                     <!-- <a class="btn theme-btn data-word" href="#">
                                         <aside>
                                             <p data-hover="Contacts">Contact me<i class='ph ph-arrow-up-right arrow-icon'></i></p>
@@ -148,8 +150,8 @@
                                             </div>
                                         </div>
                                         <div class="slider-btn">
-                                            <button class="prev"><i class="ph ph-caret-left"></i></button>
-                                            <button class="next active"><i class="ph ph-caret-right"></i></button>
+                                            <button class="swiper-button-prev"><i class="ph ph-caret-left"></i></button>
+                                            <button class="swiper-button-next active"><i class="ph ph-caret-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -294,7 +296,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-12 client-area">
-                                    <div class="clients d-flex">
+                                    <div class="clients client-slider d-flex">
                                         <div class="client-logo">
                                             <img src="./assets/images/youtube.png" alt="client" />
                                         </div>
@@ -313,7 +315,7 @@
                                         <div class="client-logo">
                                             <img src="./assets/images/zoom.png" alt="client" />
                                         </div>
-                                        <!-- <div class="client-logo">
+                                        <div class="client-logo">
                                             <img src="./assets/images/youtube.png" alt="client" />
                                         </div>
                                         <div class="client-logo">
@@ -331,7 +333,7 @@
                                         <div class="client-logo">
                                             <img src="./assets/images/zoom.png" alt="client" />
                                         </div> 
-                                        <div class="client-logo break"></div> -->
+                                        <div class="client-logo break"></div>
                                     </div>
                                 </div>
                             </div>
@@ -671,58 +673,82 @@
                                     <div class="section-header">
                                         <div class="nolink-btn">Testimonial</div>
                                         <div class="slider-btn">
-                                            <button class="prev"><i class="ph ph-caret-left"></i></button>
-                                            <button class="next active"><i class="ph ph-caret-right"></i></button>
+                                            <button class="swiper-button-prev"><i class="ph ph-caret-left"></i></button>
+                                            <button class="swiper-button-next active"><i class="ph ph-caret-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="container">
-                            <div class="row testimonial-items">
-                                <div class="col-6 testimonial-item">
-                                    <div class="auth-img-box">
-                                        <img src="assets/images/testimonial1.png" alt="author-img">
-                                    </div>
-                                    <span class="testimonial-dotted-line"></span>
-                                    <div class="testimonial-item-content">
-                                        <div class="author-about">
-                                            <div class="author-info">
-                                                <h3>Larry Daley</h3>
-                                                <p>Product Designer</p>
+                            <div class="row">
+                                <div class="col-12 swiper testimonial-slider">
+                                    <div class="swiper-wrapper testimonial-items">
+                                        <div class="swiper-slide testimonial-item">
+                                            <div class="auth-img-box">
+                                                <img src="assets/images/testimonial1.png" alt="author-img">
                                             </div>
-                                            <div class="auth-logo-box">
-                                                <img src="assets/images/google.svg" alt="author-logo">
-                                            </div>
-                                        </div>
-                                        <div class="author-content">
-                                            <p>Companies typically change their branding to stay relevant in a dynamic market, attract new customers, and differentiate from competitors, explained mark n. vena.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 testimonial-item">
-                                    <div class="auth-img-box">
-                                        <img src="assets/images/testimonial2.png" alt="author-img">
-                                    </div>
-                                    <span class="testimonial-dotted-line"></span>
-                                    <div class="testimonial-item-content">
-                                        <div class="author-about">
-                                            <div class="author-info">
-                                                <h3>Manny William</h3>
-                                                <p>Full Stack Developer</p>
-                                            </div>
-                                            <div class="auth-logo-box">
-                                                <img src="assets/images/thread.svg" alt="author-logo">
+                                            <span class="testimonial-dotted-line"></span>
+                                            <div class="testimonial-item-content">
+                                                <div class="author-about">
+                                                    <div class="author-info">
+                                                        <h3>Larry Daley</h3>
+                                                        <p>Product Designer</p>
+                                                    </div>
+                                                    <div class="auth-logo-box">
+                                                        <img src="assets/images/google.svg" alt="author-logo">
+                                                    </div>
+                                                </div>
+                                                <div class="author-content">
+                                                    <p>Companies typically change their branding to stay relevant in a dynamic market, attract new customers, and differentiate from competitors, explained mark n. vena.</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="author-content">
-                                            <p>The headwinds outlined in this analysis are not going to help the situation. One can only hope that market consolidation might benefit subscribers in the long term with platforms.</p>
+                                        <div class="swiper-slide testimonial-item">
+                                            <div class="auth-img-box">
+                                                <img src="assets/images/testimonial2.png" alt="author-img">
+                                            </div>
+                                            <span class="testimonial-dotted-line"></span>
+                                            <div class="testimonial-item-content">
+                                                <div class="author-about">
+                                                    <div class="author-info">
+                                                        <h3>Manny William</h3>
+                                                        <p>Full Stack Developer</p>
+                                                    </div>
+                                                    <div class="auth-logo-box">
+                                                        <img src="assets/images/thread.svg" alt="author-logo">
+                                                    </div>
+                                                </div>
+                                                <div class="author-content">
+                                                    <p>The headwinds outlined in this analysis are not going to help the situation. One can only hope that market consolidation might benefit subscribers in the long term with platforms.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide testimonial-item">
+                                            <div class="auth-img-box">
+                                                <img src="assets/images/testimonial2.png" alt="author-img">
+                                            </div>
+                                            <span class="testimonial-dotted-line"></span>
+                                            <div class="testimonial-item-content">
+                                                <div class="author-about">
+                                                    <div class="author-info">
+                                                        <h3>Manny William</h3>
+                                                        <p>Full Stack Developer</p>
+                                                    </div>
+                                                    <div class="auth-logo-box">
+                                                        <img src="assets/images/thread.svg" alt="author-logo">
+                                                    </div>
+                                                </div>
+                                                <div class="author-content">
+                                                    <p>The headwinds outlined in this analysis are not going to help the situation. One can only hope that market consolidation might benefit subscribers in the long term with platforms.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>  
                 </div>
             </section>
             <!-- End Testimonial -->
@@ -748,7 +774,7 @@
                             </div>
                         </div>
                         <div class="container">
-                            <div class="row gallery-items">  <!-- gallery-slider -->
+                            <div class="row gallery-items gallery-slider">
                                 <div class="col-md-3 gallery-item">
                                     <img src="assets/images/gallery1.png" alt="gallery-img">
                                 </div>
@@ -761,7 +787,16 @@
                                 <div class="col-md-3 gallery-item">
                                     <img src="assets/images/gallery4.png" alt="gallery-img">
                                 </div>
-                                <!-- <div class="gallery-item-inner break2"></div> -->
+                                <div class="col-md-3 gallery-item">
+                                    <img src="assets/images/gallery5.png" alt="gallery-img">
+                                </div>
+                                <div class="col-md-3 gallery-item">
+                                    <img src="assets/images/gallery6.png" alt="gallery-img">
+                                </div>
+                                <div class="col-md-3 gallery-item">
+                                    <img src="assets/images/gallery7.png" alt="gallery-img">
+                                </div>
+                                <div class="gallery-item break"></div>
                             </div>
                         </div>
                     </div>
@@ -896,7 +931,8 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/Draggable.min.js"></script>
-    <script src="assets/js/client-marquee.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/client-slider.js"></script>
     <script src="assets/js/gallery-slider.js"></script>
     <script src="assets/js/index.js"></script>
 </body>

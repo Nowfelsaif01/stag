@@ -1,4 +1,5 @@
 
+// Date and Time Function
 function updateDateTime() {
     // Get the current date and time
     var currentDate = new Date();
@@ -18,7 +19,7 @@ setInterval(updateDateTime, 60000);
 
 
 
-  // Function to update time
+  // Time Function
   function updateTime() {
     const currentTime = new Date();
     const hours = currentTime.getHours();
@@ -36,4 +37,25 @@ setInterval(updateDateTime, 60000);
   // Update time immediately and then every minute
   updateTime(); // Call the function immediately to avoid delay on initial load
   setInterval(updateTime, 60000); // Update time every minute (60,000 milliseconds = 1 minute)
+
+// Testimonial Slider
+
+if ($('.testimonial-slider').length) {
+  const swiper = new Swiper('.testimonial-slider', {
+    // Optional parameters
+    // loop: true,
+    slidesPerView: 2,
+    spaceBetween: 18,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    speed: 800, 
+    easing: 'easeOutQuad',
+  });
+}
+
+
 
