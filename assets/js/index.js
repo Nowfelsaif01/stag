@@ -17,9 +17,7 @@ updateDateTime();
 // Set up an interval to update the date and time every minute (you can adjust the interval as needed)
 setInterval(updateDateTime, 60000);
 
-
-
-  // Time Function
+// Time Function
   function updateTime() {
     const currentTime = new Date();
     const hours = currentTime.getHours();

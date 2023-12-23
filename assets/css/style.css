@@ -140,12 +140,18 @@ img {
 }
 .section-header .banner{
     width: 100%;
-    padding: 0px 15px;
-    padding-top: 8px;
+    /* padding: 0px 15px;
+    padding-top: 8px; */
     background:var(--innerBox-background);
     border: 0.75px solid rgba(252, 252, 252, 0.05);
     backdrop-filter: blur(15.001426696777344px);
     overflow: hidden;
+}
+.marquee-animation{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    animation: textLoop 10s linear infinite; 
 }
 .theme-simple-btn,.theme-btn{
     font-size: 13px;
@@ -545,7 +551,6 @@ img {
     font-style: normal;
     font-weight: 400;
     color: rgba(249, 249, 249, 0.70);
-    /* animation: textLoop 5s linear infinite;  */
 }
 .section-header .slider-btn{
     display:flex;
@@ -1224,23 +1229,26 @@ img {
 
 /* text-slider */
 .marquee{
-    display: inline-block;
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    padding: 12px 15px 0px;
     overflow: hidden;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
     white-space: nowrap; 
-    /* animation: textLoop 5s linear infinite;  */
 }
 .marquee-sticky{
-    mask-image:none;
-    animation: none; 
+    position: relative;
+    padding: 8px 15px 0px;
+    mask-image: none;
+
 }
+
 /* Text-Loop Effects */
 @keyframes textLoop {
     from {
-      transform: translateX(25%);
+      transform: translateX(15%);
     }
     to {
-      transform: translateX(-25%);
+      transform: translateX(-65%);
     }
 }
 
