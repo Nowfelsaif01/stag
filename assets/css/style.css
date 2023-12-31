@@ -151,6 +151,7 @@ img {
     display: inline-block;
     position: relative;
     overflow: hidden;
+    display: inline-block;
     animation: textLoop 10s linear infinite; 
 }
 .theme-simple-btn,.theme-btn{
@@ -403,11 +404,11 @@ img {
     #About Section
 =================================================================== */
 
-.about-inner{
-    /* border: 7.501px solid rgba(0, 163, 255, 0.01);
+/* .about-inner{
+    border: 7.501px solid rgba(0, 163, 255, 0.01);
     background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px); */
-}
+    backdrop-filter: blur(15.001426696777344px);
+} */
 .about-content {
     width: 984px;
     margin:18px;
@@ -1285,10 +1286,10 @@ img {
 /* Text-Loop Effects */
 @keyframes textLoop {
     from {
-      transform: translateX(15%);
+      transform: translateX(0%);
     }
     to {
-      transform: translateX(-65%);
+      transform: translateX(-100%);
     }
 }
 
