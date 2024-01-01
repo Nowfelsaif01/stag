@@ -55,5 +55,22 @@ if ($('.testimonial-slider').length) {
   });
 }
 
+// Project Slider
+
+if ($('.project-slider').length) {
+  const swiper2 = new Swiper('.project-slider', {
+    slidesPerView: 3,
+    spaceBetween: 18,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.project-swiper-button-next',
+      prevEl: '.project-swiper-button-prev',
+    },
+    speed: 800, 
+    easing: 'easeOutQuad',
+  });
+}
+
 
 
