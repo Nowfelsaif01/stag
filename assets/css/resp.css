@@ -1,0 +1,50 @@
+/* ============================================================== 
+    # Responsive CSS
+=================================================================== */
+
+/* @media only screen and (min-width: 810) and (max-width: 1440px) {
+    .sidebar-area{
+        display: none;
+    }
+} */
+
+@media  (min-width: 810px) and (max-width: 1439px) {
+    .sidebar-area{
+        width: 122px;
+    }
+    .sidebar-header{
+        flex-direction: column;
+    }
+    .sidebar-header .time{
+        font-size:16px;
+        background: var(--innerBox-background);
+        border: 0.75px solid rgba(252, 252, 252, 0.05);
+        backdrop-filter: blur(15.001426696777344px);
+        margin-top: 20px;
+        width: 70px;
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 17px;
+    }
+    .sidebar-header .logo-box{
+        display: block;
+    }
+    .sidebar-header .logo-box .logo{
+        display: none;
+    }
+    .sidebar-area .about-me-box{
+        display: none;
+    }
+    .menu .nav-item a span{
+        display: none;
+    }
+    .menu .nav-item a{
+        width: 52px;
+    }
+    .menu .nav .nav-item{
+        align-self: center;
+    }
+    .sidebar-area .social-icons{
+        display: none;
+    }
+}

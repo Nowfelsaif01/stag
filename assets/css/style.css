@@ -299,7 +299,7 @@ img {
 .img-box img{
     height: 54px;
 }
-.about-info{
+.sidebar-area .about-info{
     align-self: center;
 }
 .about-info h2{
@@ -345,7 +345,9 @@ img {
     font-size: 15px;
     color:rgba(249, 249, 249, 0.60);
     width: 100%;
-    padding:16px 0px 16px 16px;
+    /* padding:16px 0px 16px 16px; */
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 .menu .nav-item .active{
     background:var(--innerBox-background);
@@ -369,7 +371,7 @@ img {
     font-size: 18px;
     color:rgba(249, 249, 249, 0.7)
 }
-.social-icons{
+.sidebar-area .social-icons{
     display: flex;
     align-items:center;
     justify-content: space-around;
