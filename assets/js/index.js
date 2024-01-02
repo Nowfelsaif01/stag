@@ -53,7 +53,39 @@ if ($('.testimonial-slider').length) {
     speed: 800, 
     easing: 'easeOutQuad',
   });
+
+   // Update button state based on swiper position
+   function updateButtonState() {
+    const prevButton = $('.swiper-button-prev');
+    const nextButton = $('.swiper-button-next');
+
+    if (swiper.isBeginning) {
+      prevButton.removeClass('active'); // If at the beginning, deactivate prev button
+      nextButton.addClass('active'); // Activate next button
+    } else if (swiper.isEnd) {
+      nextButton.removeClass('active'); // If at the end, deactivate next button
+      prevButton.addClass('active'); // Activate prev button
+    } else {
+      // If neither at the beginning nor end, activate both buttons
+      prevButton.removeClass('active');
+      nextButton.addClass('active');
+    }
+  }
+
+  // Initial button state
+  updateButtonState();
+
+  // Event listeners for slide change and reaching the end
+  swiper.on('slideChange', function () {
+    updateButtonState();
+  });
+
+  swiper.on('reachEnd', function () {
+    updateButtonState();
+  });
 }
+
+
 
 // Project Slider
 
@@ -67,10 +99,37 @@ if ($('.project-slider').length) {
       nextEl: '.project-swiper-button-next',
       prevEl: '.project-swiper-button-prev',
     },
-    speed: 800, 
+    speed: 800,
     easing: 'easeOutQuad',
   });
+
+  // Update button state based on swiper position
+  function updateButtonState() {
+    const prevButton = $('.project-swiper-button-prev');
+    const nextButton = $('.project-swiper-button-next');
+
+    if (swiper2.isBeginning) {
+      prevButton.removeClass('active'); // If at the beginning, deactivate prev button
+      nextButton.addClass('active'); // Activate next button
+    } else if (swiper2.isEnd) {
+      nextButton.removeClass('active'); // If at the end, deactivate next button
+      prevButton.addClass('active'); // Activate prev button
+    } else {
+      // If neither at the beginning nor end, activate both buttons
+      prevButton.removeClass('active');
+      nextButton.addClass('active');
+    }
+  }
+
+  // Initial button state
+  updateButtonState();
+
+  // Event listeners for slide change and reaching the end
+  swiper2.on('slideChange', function () {
+    updateButtonState();
+  });
+
+  swiper2.on('reachEnd', function () {
+    updateButtonState();
+  });
 }
-
-
-

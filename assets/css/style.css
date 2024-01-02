@@ -129,6 +129,11 @@ img {
     width: 1035px;
     margin-left: 370px;
 }
+.bg-linear{
+    border: 0.75px solid rgba(252, 252, 252, 0.05);
+    backdrop-filter: blur(15.001426696777344px);
+    background: linear-gradient(180deg,rgba(0,163,255,.05) 0%,rgba(0,163,255,.019999999552965164) 100%);
+}
 .section-header{
     display: flex;
     gap: 16px;
@@ -219,17 +224,8 @@ img {
     opacity: 1;
 }
 .about-area,.project-area,.partners-area,.education-area,.service-area,
-.stack-area,.blog-area,.testimonial-area,.gallery-area,.contact-area{
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    margin-bottom: 38px;
-}
-.about-area{
-    border: 7.501px solid rgba(0, 163, 255, 0.01);
-    backdrop-filter: blur(15.001426696777344px);
-    background: linear-gradient(180deg,rgba(0,163,255,.05) 0%,rgba(0,163,255,.019999999552965164) 100%);
-    /* background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px); */
-    /* border: 0.75px solid rgba(252, 252, 252, 0.05); */
+.stack-area,.blog-area,.testimonial-area,.gallery-area,.contact-area,
+.footer-area{
     margin-bottom: 38px;
 }
 
@@ -244,18 +240,11 @@ img {
     top: 18px;
     left: 18px;
     bottom: 18px;
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
     overflow: hidden;
     /* -ms-transform: translateY(-50%);
     transform: translateY(-50%);  */
 }
 .sidebar-inner{
-    /* z-index:11;
-    height: 100%;
-    width: 100%; */
-    border: 7.501px solid rgba(0, 163, 255, 0.01);
-    background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -407,14 +396,9 @@ img {
     #About Section
 =================================================================== */
 
-/* .about-inner{
-    border: 7.501px solid rgba(0, 163, 255, 0.01);
-    background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px);
-} */
 .about-content {
     width: 984px;
-    margin:18px;
+    margin:25px;
     padding: 0px;
 }
 .about-content .row {
@@ -452,10 +436,12 @@ img {
     font-size: 13px;
     font-weight: 400;
     color: #f9f9f9;
-    padding: 10px 24px;
+    padding: 0px 24px;
+    width: 240px;
     display: inline-flex;
     align-items:center;
-    gap: 8px;
+    justify-content: center;
+    gap: 10px;
     border: 0.75px solid rgba(252, 252, 252, 0.05);
     background: linear-gradient(270deg, rgba(0, 170, 255, 0.04) 0%, rgba(0, 170, 255, 0.02) 100%);
     backdrop-filter: blur(15.001426696777344px);
@@ -552,14 +538,9 @@ img {
     #Project Section
 =================================================================== */
 
-.project-inner{
-    border: 7.501px solid rgba(0, 163, 255, 0.01);
-    background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px);
-}
 .project-content{
     width: 984px;
-    margin:18px;
+    margin:25px;
     overflow: hidden;
 }
 .project-items{
@@ -680,14 +661,9 @@ img {
     #Partners Section
 =================================================================== */
 
-.partners-inner{
-    border: 7.501px solid rgba(0, 163, 255, 0.01);
-    background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px);
-}
 .partners-content{
     width: 984px;
-    margin:18px;
+    margin:25px;
 }
 .client-area {
     padding: 14px;
@@ -748,16 +724,11 @@ img {
     #Education & Experience Section
 =================================================================== */
 
-.education-inner{
-    border: 7.501px solid rgba(0, 163, 255, 0.01);
-    background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px);
-}
 .education-content{
     width: 984px;
-    margin:18px;
+    margin:25px;
 }
-.education-inner .education-content .container .row{
+.education-content .container .row{
     gap: 18px;
 }
 .education-box, .experience-box{
@@ -827,14 +798,9 @@ img {
     #Services Section
 =================================================================== */
 
-.service-inner{
-    border: 7.501px solid rgba(0, 163, 255, 0.01);
-    background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px);
-}
 .service-content{
     width: 984px;
-    margin:18px;
+    margin:25px;
 }
 .service-items{
     gap: 18px;
@@ -885,14 +851,9 @@ img {
     #Stack Section
 =================================================================== */
 
-.stack-inner{
-    border: 7.501px solid rgba(0, 163, 255, 0.01);
-    background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px);
-}
 .stack-content{
     width: 984px;
-    margin:18px;
+    margin:25px;
 }
 .stack-items{
     gap: 18px;
@@ -927,14 +888,9 @@ img {
     #Blog Section
 =================================================================== */
 
-.blog-inner{
-    border: 7.501px solid rgba(0, 163, 255, 0.01);
-    background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px);
-}
 .blog-content{
     width: 984px;
-    margin:18px;
+    margin:25px;
 }
 .blog-items{
     gap: 18px;
@@ -944,14 +900,9 @@ img {
     #Testimonial Section
 =================================================================== */
 
-.testimonial-inner{
-    border: 7.501px solid rgba(0, 163, 255, 0.01);
-    background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px);
-}
 .testimonial-content{
     width: 984px;
-    margin:18px;
+    margin:25px;
     overflow: hidden;
 }
 .testimonial-content .section-header{
@@ -1051,14 +1002,9 @@ img {
     #Gallery Section
 =================================================================== */
 
-.gallery-inner{
-    border: 7.501px solid rgba(0, 163, 255, 0.01);
-    background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px);
-}
 .gallery-content{
     max-width: 984px;
-    margin:18px;
+    margin:25px;
 }
 .gallery-items{
     flex-wrap: nowrap;
@@ -1089,14 +1035,9 @@ img {
     #Contact Section
 =================================================================== */
 
-.contact-inner{
-    border: 7.501px solid rgba(0, 163, 255, 0.01);
-    background:var(--box_background);
-    backdrop-filter: blur(15.001426696777344px);
-}
 .contact-content{
     max-width: 984px;
-    margin:18px;
+    margin:25px;
 }
 .contact-items{
     justify-content: space-between;
@@ -1215,7 +1156,6 @@ img {
 
 .footer-area{
     border-top: 1px solid rgba(252, 252, 252, 0.10);
-    margin-bottom:38px ;
 }
 .footer-content{
     display: flex;
