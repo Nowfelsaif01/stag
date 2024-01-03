@@ -3,7 +3,7 @@
 =================================================================== */
 
 /* @media only screen and (min-width: 810) and (max-width: 1440px) {
-    .sidebar-area{
+    .navbar{
         display: none;
     }
 } */
@@ -45,6 +45,18 @@
         align-self: center;
     }
     .sidebar-area .social-icons{
+        display: none;
+    }
+}
+
+@media (min-width:810px){
+    .navbar{
+        display: none;
+    }
+}
+
+@media  (max-width: 809px){
+    .sidebar-area{
         display: none;
     }
 }

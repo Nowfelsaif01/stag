@@ -1283,3 +1283,28 @@ img {
     from { background-position: 0px 0px; }
     to { background-position: 500px 0px; }
 }
+
+/* CSS for Navbar */
+.navbar {
+    display: block;
+    padding: 20px;
+}
+/* .logo img {
+    max-height: 40px;
+} */
+.toggle-button {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+.toggle-button .dot {
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 100%;
+    margin: 5px 0;
+    background-color: #fff;
+    transition: 0.4s;
+}
