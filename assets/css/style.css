@@ -331,8 +331,13 @@ img {
     margin-right: 5px;
 }
 .menu{
+    display: none;
     margin-top: 61px;
     /* margin-bottom:80px; */
+    transition: .3s;
+}
+.active{
+    display: block;
 }
 .menu .nav-item a i{
     font-size: 19px;

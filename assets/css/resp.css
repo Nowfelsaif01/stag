@@ -35,6 +35,9 @@
     .sidebar-area .about-me-box{
         display: none;
     }
+    .menu{
+        display: block;
+    }
     .menu .nav-item a span{
         display: none;
     }

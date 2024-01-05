@@ -133,3 +133,9 @@ if ($('.project-slider').length) {
     updateButtonState();
   });
 }
+
+const menuButton = document.querySelector('.toggle-button');
+const menu = document.querySelector('.menu');
+menuButton.addEventListener('click',()=>{
+  menu.classList.toggle('active');
+});
