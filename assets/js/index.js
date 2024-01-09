@@ -134,6 +134,7 @@ if ($('.project-slider').length) {
   });
 }
 
+// Responsive Menu
 const menuButton = document.querySelector('.toggle-button');
 const menu = document.querySelector('.menu');
 menuButton.addEventListener('click',()=>{

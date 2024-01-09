@@ -50,8 +50,6 @@ Body copy:    12px 'DM Sans', sans-serif
 /* Varialbes */
 :root {
     --body_background:#040404;
-    --box_background: linear-gradient(180deg, rgba(0, 163, 255, 0.05) 0%, rgba(0, 163, 255, 0.02) 100%);
-    --innerBox-background:linear-gradient(270deg, rgba(0, 170, 255, 0.04) 0%, rgba(0, 170, 255, 0.02) 100%);
     --primary_color: #1351D8;
     --primary_color2: #4F8DFF;
     --primary_light: #F3F6FD;
@@ -126,30 +124,45 @@ img {
     padding-bottom: 0px;
 }
 .custom-container {
-    width: 1035px;
+    /* width: 1035px; */
     margin-left: 370px;
 }
-.bg-linear{
+.bg-shadow{
     border: 0.75px solid rgba(252, 252, 252, 0.05);
     backdrop-filter: blur(15.001426696777344px);
-    background: linear-gradient(180deg,rgba(0,163,255,.05) 0%,rgba(0,163,255,.019999999552965164) 100%);
+    background: linear-gradient(180deg, rgba(0,163,255,.05) 0%,rgba(0,163,255,.019999999552965164) 100%);
+}
+.box-shadow{
+    background: linear-gradient(270deg, rgba(0, 170, 255, 0.04) 0%, rgba(0, 170, 255, 0.02) 100%);
+    border: 0.75px solid rgba(252, 252, 252, 0.05);
+    backdrop-filter: blur(15.001426696777344px);
+}
+.box-shadow-2{
+    border: 0.75px solid rgba(252, 252, 252, 0.10);
+    background: linear-gradient(270deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0.00) 100%);
+    backdrop-filter: blur(15.001426696777344px);
+}
+.btn-shadow{
+    background: 
+    linear-gradient(0deg, rgba(0, 170, 255, 0.05) 0%, rgba(182, 103, 195, 0.05) 100%),
+    radial-gradient(51.06% 51.06% at 50% 48.94%, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.00) 100%); 
+    border: 0.75px solid rgba(252, 252, 252, 0.10);
+    backdrop-filter: blur(26.25249671936035px);
+}
+.btn-shadow-2{
+    background: linear-gradient(to right, rgba(0, 170, 255, 0.01), rgba(0, 170, 255, 0.05)) transparent;
+    border: 0.75px solid rgba(252, 252, 252, 0.05);
 }
 .section-header{
     display: flex;
     gap: 16px;
     padding: 14px 12px;
     margin-bottom: 18px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .section-header .banner{
     width: 100%;
     /* padding: 0px 15px;
     padding-top: 8px; */
-    background:var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
     overflow: hidden;
 }
 .marquee-animation{
@@ -159,7 +172,8 @@ img {
     display: inline-block;
     animation: textLoop 10s linear infinite; 
 }
-.theme-simple-btn,.theme-btn{
+.theme-simple-btn,
+.theme-btn{
     font-size: 13px;
     font-weight: 400;
     color: #f9f9f9;
@@ -167,14 +181,6 @@ img {
     align-items:center;
     padding: 10px 24px;
     gap: 15px;
-    border: 0.75px solid rgba(252, 252, 252, 0.10);
-    backdrop-filter: blur(26.25249671936035px);
-    background: 
-    linear-gradient(0deg, rgba(0, 170, 255, 0.05) 0%, rgba(182, 103, 195, 0.05) 100%),
-    radial-gradient(51.06% 51.06% at 50% 48.94%, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.00) 100%);
-    /* background: radial-gradient(51.06% 51.06% at 50% 48.94%, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.00) 100%);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px); */
 }
 .theme-btn{
     padding: 10px 20px 10px 18px;
@@ -187,11 +193,6 @@ img {
     display: inline-flex;
     align-items:center;
     padding: 10px 21px 10px;
-    border: 0.75px solid rgba(252, 252, 252, 0.10);
-    backdrop-filter: blur(26.25249671936035px);
-    background: 
-    linear-gradient(0deg, rgba(0, 170, 255, 0.05) 0%, rgba(182, 103, 195, 0.05) 100%),
-    radial-gradient(51.06% 51.06% at 50% 48.94%, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.00) 100%);
 }
 .section-header .banner span{
     font-size: 12px;
@@ -208,9 +209,6 @@ img {
     font-weight: 400;
     color:rgba(249, 249, 249);
     opacity: 0.5;
-    border: 0.75px solid rgba(252, 252, 252, 0.10); 
-    background: linear-gradient(270deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0.00) 100%);
-    backdrop-filter: blur(15px);
 }
 .section-header .slider-btn .swiper-button-prev, 
 .section-header .slider-btn .swiper-button-next,
@@ -227,6 +225,11 @@ img {
 .stack-area,.blog-area,.testimonial-area,.gallery-area,.contact-area,
 .footer-area{
     margin-bottom: 38px;
+}
+.about-content,.project-content,.partners-content,.education-content,.service-content,.stack-content,
+.blog-content,.testimonial-content,.gallery-content,.contact-content{
+    /* width: 984px; */
+    margin:25px;
 }
 
 /* ============================================================== 
@@ -266,9 +269,6 @@ img {
     text-align: center;
     padding: 17px 14px 18px;
     width: 70px;
-    background-color:var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .sidebar-header .logo-box .logo-img-box img{
     max-height: 25px;
@@ -287,9 +287,6 @@ img {
     margin-top: 20px;
     padding:27px 0px 27px 27px;
     gap: 20px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .img-box{
     border: 0.75px solid rgba(252, 252, 252, 0.05);
@@ -355,7 +352,7 @@ img {
     padding-bottom: 16px;
 }
 .menu .nav-item .active{
-    background:var(--innerBox-background);
+    background: linear-gradient(270deg, rgba(0, 170, 255, 0.04) 0%, rgba(0, 170, 255, 0.02) 100%);
     border: 0.75px solid rgba(252, 252, 252, 0.05);
     backdrop-filter: blur(15.001426696777344px);
 }
@@ -376,21 +373,15 @@ img {
     font-size: 18px;
     color:rgba(249, 249, 249, 0.7)
 }
-.sidebar-area .social-icons{
+.social-icons{
     display: flex;
     align-items:center;
     justify-content: space-around;
     min-width:198px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .copyright{
-    min-width: 81px;
+    width: 100%;
     padding: 12px 0px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .copyright p{
     font-size: 13px;
@@ -404,8 +395,6 @@ img {
 =================================================================== */
 
 .about-content {
-    width: 984px;
-    margin:25px;
     padding: 0px;
 }
 .about-content .row {
@@ -435,9 +424,6 @@ img {
     padding: 14px 12px;
     margin-bottom: 16px;
     justify-content: space-between;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .about-content .content-box .about-section-header .show-date{
     font-size: 13px;
@@ -449,9 +435,6 @@ img {
     align-items:center;
     justify-content: center;
     gap: 10px;
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    background: linear-gradient(270deg, rgba(0, 170, 255, 0.04) 0%, rgba(0, 170, 255, 0.02) 100%);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .about-content .content-box .about-section-header .show-date i{
     color: #00aaff;
@@ -463,9 +446,6 @@ img {
 .section-about .about-box{
     width: 357px;
     height: 294px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
     padding: 30px 27px;
 }
 .section-about .about-box .user-signature{
@@ -504,9 +484,6 @@ img {
     position: relative;
     width: 291px;
     height: 294px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
     overflow: hidden;
 }
 .location-box .location-info{
@@ -521,11 +498,6 @@ img {
     color: #f9f9f9;
     min-height:39px;
     padding: 10px 20px;
-    border: 0.75px solid rgba(252, 252, 252, 0.10);
-    backdrop-filter: blur(26.25249671936035px);
-    background: 
-    linear-gradient(0deg, rgba(0, 170, 255, 0.05) 0%, rgba(182, 103, 195, 0.05) 100%),
-    radial-gradient(51.06% 51.06% at 50% 48.94%, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.00) 100%);
 }
 .location-box .location-info .location{
     font-size: 13px;
@@ -533,12 +505,6 @@ img {
     color: #f9f9f9;
     height:39px;
     padding: 10px 17px;
-    border: 0.75px solid rgba(252, 252, 252, 0.10);
-    background: linear-gradient(270deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0.00) 100%);
-    backdrop-filter: blur(15.001426696777344px);
-    /* border: rgba(251, 251, 251, .05);
-    backdrop-filter: blur(0px);
-    background: linear-gradient(-89.99999881140911deg,rgba(0,170,255,.04) 0%,rgba(0,170,255,.019999999552965164) 100%); */
 }
 
 /* ============================================================== 
@@ -546,8 +512,6 @@ img {
 =================================================================== */
 
 .project-content{
-    width: 984px;
-    margin:25px;
     overflow: hidden;
 }
 .project-items{
@@ -563,9 +527,6 @@ img {
 .blog-items .blog-item{
     position: relative;
     width: 316px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
     padding: 7px 7px 26px 7px;
     transition: all .5s;
 }
@@ -633,9 +594,6 @@ img {
     position: relative;
     text-align: center;
     overflow: hidden;
-    border: 0.75px solid rgba(252, 252, 252, 0.10);
-    background: linear-gradient(270deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0.00) 100%);
-    backdrop-filter: blur(15px);
 }
 .info-box .icon-box i{
     position: absolute;
@@ -668,17 +626,10 @@ img {
     #Partners Section
 =================================================================== */
 
-.partners-content{
-    width: 984px;
-    margin:25px;
-}
 .client-area {
     padding: 14px;
     margin-bottom: 18px;
     overflow: hidden;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .client-area .clients {
     gap: 18px;
@@ -688,9 +639,6 @@ img {
     height: 70px;
     min-width: 138px;
     padding: 25px 37px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .client-area .clients .client-logo img{
     width: 100%;
@@ -710,9 +658,6 @@ img {
 .fact-info{
     width: 315px;
     padding: 25px 0px 25px 16px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .fact-info h1{
     color: #F9F9F9;
@@ -731,17 +676,10 @@ img {
     #Education & Experience Section
 =================================================================== */
 
-.education-content{
-    width: 984px;
-    margin:25px;
-}
 .education-content .container .row{
     gap: 18px;
 }
 .education-box, .experience-box{
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
     padding: 14px 0px 0px 14px;
     width: 482px;
 }
@@ -805,21 +743,14 @@ img {
     #Services Section
 =================================================================== */
 
-.service-content{
-    width: 984px;
-    margin:25px;
-}
 .service-items{
     gap: 18px;
 }
 .service-item{
     display: flex;
     justify-content: space-between;
-    width: 483px;
+    width: 482px;
     padding: 25px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .service-info h3{
     color: #FFF;
@@ -846,9 +777,6 @@ img {
     font-size: 17px;
     text-align: center;
     padding-top: 5px;
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    background: var(--innerBox-background);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .service-item:hover{
     border: 0.75px solid rgb(0, 170, 255, 0.30);
@@ -858,10 +786,6 @@ img {
     #Stack Section
 =================================================================== */
 
-.stack-content{
-    width: 984px;
-    margin:25px;
-}
 .stack-items{
     gap: 18px;
 }
@@ -871,9 +795,6 @@ img {
     gap: 18px;
     width: 483px;
     padding: 8px 0px 8px 8px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .stack-item img{
     height: 60px;
@@ -895,10 +816,6 @@ img {
     #Blog Section
 =================================================================== */
 
-.blog-content{
-    width: 984px;
-    margin:25px;
-}
 .blog-items{
     gap: 18px;
 }
@@ -908,8 +825,6 @@ img {
 =================================================================== */
 
 .testimonial-content{
-    width: 984px;
-    margin:25px;
     overflow: hidden;
 }
 .testimonial-content .section-header{
@@ -926,9 +841,6 @@ img {
     gap: 15px;
     padding: 25px;
     min-width: 483px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .testimonial-item .auth-img-box{
     padding-top: 4px;
@@ -967,9 +879,6 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 8px 7px 7px 26px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .author-info h3{
     color: #F9F9F9;
@@ -987,16 +896,10 @@ img {
     min-width: 52px;
     line-height: 50px;
     text-align: center;
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    background: linear-gradient(270deg, rgba(0, 170, 255, 0.04) 0%, rgba(0, 170, 255, 0.02) 100%);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .author-content{
     margin-top: 18px;
     padding: 18px 25px 25px 25px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .author-content p{
     font-size: 12px;
@@ -1009,10 +912,6 @@ img {
     #Gallery Section
 =================================================================== */
 
-.gallery-content{
-    max-width: 984px;
-    margin:25px;
-}
 .gallery-items{
     flex-wrap: nowrap;
     gap: 18px;
@@ -1021,9 +920,6 @@ img {
 .gallery-item{
     width: 232px;
     padding: 8px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15px);
 }
 .gallery-item img{
     height:255px;
@@ -1042,21 +938,15 @@ img {
     #Contact Section
 =================================================================== */
 
-.contact-content{
-    max-width: 984px;
-    margin:25px;
-}
 .contact-items{
-    justify-content: space-between;
-    /* gap: 18px; */
+    /* justify-content: space-between; */
+    gap: 18px;
 }
 .contact-form-box{
     width: 575px;
 }
 .form-box{
     padding: 25px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
 }
 .form-box input,
 .form-box textarea{
@@ -1067,8 +957,6 @@ img {
     color: rgba(249, 249, 249, 0.50);
     margin-bottom: 25px;
     padding: 15px;
-    background: linear-gradient(to right, rgba(0, 170, 255, 0.01), rgba(0, 170, 255, 0.05));
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
 }
 .form-box textarea{
     min-height: 120px;
@@ -1080,8 +968,6 @@ img {
     font-size: 13px;
     font-weight: 400;
     padding:0px;
-    background: linear-gradient(to right, rgba(0, 170, 255, 0.01), rgba(0, 170, 255, 0.05)) transparent;
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
 }
 .form-box button:hover{
     border-color:#00aaff ;
@@ -1089,20 +975,14 @@ img {
 }
 .contact-detail-box{
     width: 390px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15px);
     padding: 14px;
 }
-.bg-box{
+.contact-detail-wrap{
     display: flex;
     flex-direction:column;
     gap: 15px;
     margin-top: 18px;
     padding: 25px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15px);
 }
 .contact-info-box{
     display: flex;
@@ -1125,16 +1005,10 @@ img {
     color: #00aaff;
     text-align: center;
     line-height: 58px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .contact-info{
     width: 100%;
     padding: 26px 0px 22px 26px;
-    background: var(--innerBox-background);
-    border: 0.75px solid rgba(252, 252, 252, 0.05);
-    backdrop-filter: blur(15.001426696777344px);
 }
 .contact-info h2{
     font-size: 18px;
